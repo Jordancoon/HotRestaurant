@@ -4,15 +4,15 @@ var require = require("path");
 module.exports = function(app) {
 
     app.get("/tables", function(app) {
-        res.sendFile(path.join(__dirname, "../public/tables.html"));
+        res.sendFile(path.join(__dirname, "../public/viewTables.html"));
     });
 
     app.get("/reserve", function(app) {
-        res.sendFile(path.join(__dirname, "../public/reserve.html"));
+        res.sendFile(path.join(__dirname, "../public/addReservation.html"));
 });
 
 app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/reserve.html"));
+    res.sendFile(path.join(__dirname, "../public/addReservation.html"));
 
 });
 };
