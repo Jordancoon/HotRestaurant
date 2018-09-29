@@ -10,7 +10,7 @@ module.exports = function(app) {
     });
 
     app.get("/api/waitlist", function(req, res) {
-        res.json(waiListData);
+        res.json(waitListData);
     });
 
     app.post("/api/tables", function(req, res) {
