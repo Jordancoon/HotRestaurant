@@ -1,6 +1,6 @@
 // load data //
 var tableData = require("../data/tableData");
-var waitListData = require("../data/waitinglist")
+var waitListData = require("../data/waitingList")
 ///
 
 module.exports = function(app) {
@@ -9,8 +9,8 @@ module.exports = function(app) {
         res.json(tableData);
     });
 
-    app.get("/api/waitlist", function(req, res) {
-        res.json(waitListData);
+    app.get("/api/waitList", function(req, res) {
+        res.json(waitlistData);
     });
 
     app.post("/api/tables", function(req, res) {
